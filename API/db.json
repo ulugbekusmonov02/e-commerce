@@ -1,0 +1,87 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imageURL": "https://www.vexcolteurope.com/wp-content/uploads/2018/04/ref_wembley_04.jpg",
+      "title": "Wembley",
+      "capacity": 80000,
+      "address": "London HA9 0WS, United Kingdom",
+      "reyting": 5,
+      "price": 40000000,
+      "opened": "March 9, 2007",
+      "club": {
+        "name": "England National Football Team",
+        "coach": "Gareth Southgate"
+      }
+    },
+    {
+      "id": 2,
+      "imageURL": "https://www.themed.co.uk/media/catalog/product/cache/a4a7b26bad1cadb6c167e8338c7b2318/e/m/emirates_stadium_10_061121a_1.jpg",
+      "title": "Bunyodkor",
+      "capacity": 75850,
+      "address": "Uzbekistan Tashkent",
+      "reyting": 2,
+      "price": 1500000,
+      "opened": "September 20, 2017",
+      "club": {
+        "name": "Uzbekistan National Football Team",
+        "coach": "Babayan"
+      }
+    },
+    {
+      "id": 4,
+      "imageURL": "https://sportshub.cbsistatic.com/i/r/2021/10/08/c24fa8a4-81d2-4b98-ae4c-743d143cfd8c/thumbnail/1200x675/51c629eccdc959ef92589c7982927f78/allegiant-stadium.jpg",
+      "title": "Azteca ",
+      "capacity": 140000,
+      "address": "Mexico",
+      "reyting": 4.5,
+      "price": 8500000,
+      "opened": "April 30, 2009",
+      "club": {
+        "name": "Mexico National Football Team",
+        "coach": "Jack Torento"
+      }
+    },
+    {
+      "id": 5,
+      "imageURL": "https://lifebeyondsportmedia.com/bestanden/Ranking-the-top-10-stadiums/Allianz_Arena_at_Night_800_x_320.jpg",
+      "title": "The Allianz ",
+      "capacity": 785200,
+      "address": "United Kingdom",
+      "reyting": 3.5,
+      "price": 685500,
+      "opened": "March 9, 2007",
+      "club": {
+        "name": "UK National Football Team",
+        "coach": "Phill Santez"
+      }
+    },
+    {
+      "id": 6,
+      "imageURL": "https://lifebeyondsportmedia.com/bestanden/Ranking-the-top-10-stadiums/Soccer_City_by_night_800_x_320.jpg",
+      "title": "Soccer City",
+      "capacity": 160000,
+      "address": "South Africa",
+      "reyting": 5,
+      "price": 9650000,
+      "opened": "March 9, 2007",
+      "club": {
+        "name": "Africa National Football Team",
+        "coach": "John America"
+      }
+    },
+    {
+      "imageURL": "https://cdni.rt.com/russian/images/2020.12/article/5fdd0d78ae5ac96d080ab202.jpeg",
+      "title": "Star World",
+      "capacity": "182000",
+      "address": "USA New York",
+      "reyting": "4",
+      "price": "9500000",
+      "opened": "2018-05-10",
+      "club": {
+        "name": "New York National Team"
+      },
+      "id": 7
+    }
+  ]
+}
