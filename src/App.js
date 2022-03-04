@@ -7,6 +7,7 @@ import StadiumUpdate from "./pages/StadiumUpdate/StadiumUpdate";
 import CartPage from "./pages/Cart";
 import ProductProvider from "./utils/productContext";
 import User from "./pages/User";
+import Registration from "./pages/Registration";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/stadium/update/:id" element={<StadiumUpdate />} />
           <Route path="/stadium/create" element={<StadiumCreate />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/user/new" element={<Registration />} />
         </Routes>
       </BrowserRouter>
     </ProductProvider>

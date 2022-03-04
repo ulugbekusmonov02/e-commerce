@@ -16,6 +16,11 @@ function ProductCard({ stadion, isOnCartPage }) {
     setCartStadions(newArray);
   };
 
+  const deleteFromCart = () => {
+    const newArray = cartStadions.filter((item) => item.id !== stadion.id);
+    setCartStadions(newArray);
+  };
+
   return (
     <div className="max-w-sm hover:shadow-lg shadow-slate-700 bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform hover:scale-103 ">
       <div className="p-4 ">
@@ -60,14 +65,36 @@ function ProductCard({ stadion, isOnCartPage }) {
 
         <Link to={`/stadium/${stadion.id}`}>
           <div className="flex  text-white  bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-blue-300 opacity-50 hover:opacity-100  rounded-lg text-sm p-4  py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-            <img
-              className="w-6 h-6 text-white"
-              src="https://www.svgrepo.com/show/22172/settings.svg"
-            />
-            <button className="font-bold">Detail</button>
+            <button className="font-bold flex items-center">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                />
+              </svg>
+              <span>Detail</span>
+            </button>
           </div>
         </Link>
       </div>
+      {isOnCartPage && (
+        <div className="flex items-center justify-center w-full">
+          <button
+            onClick={deleteFromCart}
+            className="bg-red-400 text-white px-20 py-2 rounded-lg  mb-2 opacity-80 hover:opacity-100 "
+          >
+            Delete
+          </button>
+        </div>
+      )}
     </div>
   );
 }
